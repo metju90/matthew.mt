@@ -1,6 +1,25 @@
+>>> Start home page
 Hello 
 
 I am a software developer working mainly on web-related projects. My hobbies are
 skiing, gym, binging on Netflix. I am coming from a tiny island in the middle of the
 Mediterranean sea Malta and I living in Switzerland. On this site I plan to start
 writing occasional blog posts and in the future also share cool projects I worked on.
+<<< End home page
+
+
+
+>> About page
+Prior to working as a software engineer I used to work as a casino croupier. Dealing casino games such as roulette, blackjack and at later stages Texas hold 'em poker too. 4 years in the job at the age of 22 I realized that this is not what I want to do for the rest of my life. I started to ask myself what else I could do in the future. 
+
+Being my extended family's uncertified but effective PC technician I did know the basics of computers since I was a teenager. I knew what RAM, CPU and hard disk were and why a computer may be performing slow. I also knew that if your Ethernet cable was unplugged it may be the reason for not having internet connection. Ohh, and I certainly knew how to format hard disks!
+Acknowledging that my expertise in IT may be better than the average non-IT professional person (at least it was from the people I knew) but surely not good enough to work as a professional, I started to explore in which field I could see myself working as one. That was the time when I started googling "programming languages" and "software development".  Java was the first programming languages I came across with. I found a tutorial and fell in love with it. I got excited, I was doing something new and I was loving it!
+In 2012 I started to read International diploma in computing. After graduating I started reading for BSc. in Computer Science(System Engineering) in 2013. The degree focused on system engineering than the fundamentals of computer science but at that time I believed it was sufficient to land me my dream job - working as a Java developer.
+
+While studying for a bachelor degree, at the end of the year 2014 I was offered a working opportunity as a full stack developer. Working with PHP and frontend technologies. It wasn't exactly my ambition to work as a software developer if I was not using Java as a programming language but I saw this as a great opportunity to start and accepted the offer.
+Fast forwarding to today - I never looked back. I've spent amazing {years dynamic} years working as both frontend and fullstack developer. It has been an amazing journey to work with the ever-changing technologies related to web applications. 
+
+
+
+Regards,Matthew Barbara
+
