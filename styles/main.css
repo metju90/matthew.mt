@@ -1,0 +1,145 @@
+/** @format */
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("../fonts/MontserratBold.ttf");
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/MontserratRegular.ttf");
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: MontserratRegular;
+  margin: 0;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  font-family: MontserratBold;
+  font-size: 1.8rem;
+  display: block;
+}
+
+p {
+  margin-bottom: 1.7rem;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.aboutMe .textWrapper {
+  width: 80%;
+  float: left;
+  margin-left: 50px;
+}
+
+.aboutMe {
+  display: flex;
+}
+
+.aboutMe .imageWrapper {
+  width: 15%;
+  float: left;
+}
+
+.aboutMe .textWrapper p {
+  margin-bottom: 10px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.primaryContained {
+  background: var(--primary-color);
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+.primaryContained:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.navigationWrapper {
+  background: var(--primary-color);
+  height: 70px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 3px;
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 1.4rem;
+}
+
+.navigation a:hover {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.navigation a.myName {
+  flex: 6;
+}
+
+.navigation a.about,
+.navigation a.blog {
+  flex: 1;
+}
+
+.aboutMeWrapper {
+  background: #efefef;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  width: auto;
+  float: left;
+  height: 130px;
+  margin: auto;
+}
+
+.textWrapper {
+  margin-left: 40px;
+}
+
+.posts h2,
+.posts > p {
+  margin-bottom: 0;
+}
+.posts h2 {
+  line-height: 1;
+  margin-top: 1.8rem;
+  margin-bottom: 10px;
+}
