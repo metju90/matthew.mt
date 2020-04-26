@@ -2,5 +2,6 @@
 
 :root {
   --primary-color: rgba(29, 161, 242, 1);
-  --max-width: ;
+  --grey-color: rgb(239, 239, 239);
+  --component-padding: 40px 0;
 }

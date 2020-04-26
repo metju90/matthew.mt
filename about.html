@@ -4,13 +4,19 @@
   <title>Matthew Barbara</title>
 
   <link rel="stylesheet" type="text/css" href="./styles/variables.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/common.css" />
   <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="./styles/bootstrap.css" /> -->
+
+  <script src="./components/navigation-main.js"></script>
+  <script src="./components/post.js"></script>
+  <script src="./components/footer.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-160712542-3"
   ></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -56,7 +62,7 @@
       teenage when I was assembling gaming computer hardware for myself and
       friends. The idea of me working as an IT professional was intriguing. I
       started to look in which field I could work as an IT professional. Do I
-      become the certified PC technician that I never was 🤔? Or perhaps should
+      become the certified PC technician that I never was? 🤔 Or perhaps should
       I look at other jobs in IT? What if I become a programmer? but how
       exactly? These were the questions that I was asking to myself and that was
       the time when I started to be curious about software. Java was the first
@@ -65,10 +71,12 @@
       machine. Then I took it further. In few weeks I built several
       micro-applications which runs via the terminal. Then I came across HTML
       and CSS. I found these two much easier and in few days I had built an
-      amateur website - I created a website for a fictitious restaurant and it's
-      menu was full of food which I was cooking at home at that time, including
-      photos of the meals! I was doing something new and I was loving it! By
-      this time I was sure that I want to be a software engineer.
+      amateur website for a fictitious restaurant and it's menu was full of food
+      which I was cooking at home at that time. I was taking photos after each
+      cooked meal to use them on my experimental web project ☺️. By this time I
+      was sure that I want to be a software engineer. The question was no longer
+      in which field I can work in IT. The question was what programming
+      language I should focus on. At that time I had chosen Java.
     </p>
     <figure>
       <img src="./images/first-web-menu.png" />
@@ -114,7 +122,6 @@
     (function() {
       const title = "About me";
       const content = document.querySelector("#about-template").innerHTML;
-      console.log("il lalla!!", content);
 
       document.addEventListener("DOMContentLoaded", event => {
         document.querySelector("post-comp").setAttribute("title", title);
@@ -125,33 +132,7 @@
   </script>
   <body>
     <navigation-main></navigation-main>
-    <div class="container">
-      <post-comp></post-comp>
-    </div>
-    <footer>
-      <div class="container">
-        <a target="_blank" rel="noopener" href="https://twitter.com/metju90"
-          >Twitter</a
-        >
-        -
-        <a target="_blank" rel="noopener" href="https://github.com/metju90"
-          >Github</a
-        >
-        -
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://stackoverflow.com/users/3861691/matthew-barbara"
-          >Stackoverflow</a
-        >
-        -
-        <a
-          target="_blank"
-          rel="noopener"
-          href="mailto:barbaramatthew90@gmail.com"
-          >email</a
-        >
-      </div>
-    </footer>
+    <post-comp></post-comp>
+    <footer-comp></footer-comp>
   </body>
 </html>
