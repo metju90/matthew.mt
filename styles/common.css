@@ -1,15 +1,8 @@
 /** @format */
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent;
-}
-
-a:hover {
-  border-bottom: 1px solid var(--primary-color);
-}
+/* :host-co(p) {
+  color: red !important;
+} */
 
 h1,
 h2 {
@@ -23,11 +16,11 @@ p {
   margin-bottom: 0;
 }
 
-.container {
+/* :host(.container) {
   max-width: 830px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .emoji {
   font-size: 1.3rem;

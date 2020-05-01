@@ -1,42 +1,60 @@
 <!-- @format -->
 <html>
-  <meta charset="UTF-8" />
-  <title>Matthew Barbara</title>
-  <link rel="stylesheet" type="text/css" href="./styles/variables.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/common.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-  <script src="./components/navigation-main.js"></script>
-  <script src="./components/intro-about-me.js"></script>
-  <script src="./components/post-summary.js"></script>
-  <script src="./components/footer.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>xxxMatthew Barbara</title>
+    <link rel="stylesheet" type="text/css" href="./styles/variables.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-160712542-3"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <script src="./components/navigation.js" type="module"></script>
+    <script src="./components/footer.js" type="module"></script>
 
-    gtag("config", "UA-160712542-3");
-  </script>
+    <base href="/" />
 
+    <script type="module">
+      import "https://unpkg.com/router-slot";
+      customElements.whenDefined("router-slot").then(async () => {
+        const routerSlot = document.querySelector("router-slot");
+        console.log("uejjjaA??");
+        routerSlot.add([
+          {
+            path: "about",
+            component: () => import("./pages/about.js")
+          },
+          {
+            path: "/",
+            component: () => import("./pages/home.js")
+          }
+        ]);
+        document.getElementById("loader").remove();
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-160712542-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-160712542-3");
+    </script>
+  </head>
   <body>
-    <navigation-main></navigation-main>
-
-    <intro-about-me></intro-about-me>
-
-    <post-summary
-      title="Anxious about my first blog post"
-      date="April 17th, 2020"
-      summary="In 2018 I wanted to write my first blog post but I was afraid to do it..."
-      link="./blog/anxious-about-my-first-blog-post.html"
-    ></post-summary>
-
-    <footer-comp></footer-comp>
+    <x-navigation></x-navigation>
+    <div id="loader">
+      <x-container>
+        Loader...
+      </x-container>
+    </div>
+    <router-slot></router-slot>
+    <!-- <router-slot></router-slot> -->
+    <x-footer></x-footer>
   </body>
 </html>
