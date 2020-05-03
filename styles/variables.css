@@ -4,26 +4,6 @@
   --primary-color: rgba(29, 161, 242, 1);
   --grey-color: rgb(239, 239, 239);
   --component-padding: 40px 0;
-}
-/* :root::theme(anchor) {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent;
-} */
-
-/* post-summary::part(anchor), */
-/* intro-about-me::part(anchor)  */
-router-slot x-home::part(anchor),
-x-footer::part(anchor) {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent;
-}
-
-post-summary::part(anchor):hover,
-x-footer::part(anchor):hover,
-intro-about-me::part(anchor):hover {
-  border-bottom: 1px solid var(--primary-color);
+  margin: 0;
+  padding: 0;
 }

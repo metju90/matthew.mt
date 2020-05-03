@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: MontserratBold;
-  src: url("../fonts/MontserratBold.ttf");
+  src: url("/fonts/MontserratBold.ttf");
 }
 
 @font-face {
   font-family: MerriweatherSans-Regular;
-  src: url("../fonts/MerriweatherSans-Regular.ttf");
+  src: url("/fonts/MerriweatherSans-Regular.ttf");
 }
 
 html {
