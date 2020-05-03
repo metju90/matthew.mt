@@ -1,8 +1,9 @@
 /** @format */
-import Container from "./container.js";
+import "/components/container.js";
+import "/components/anchor.js";
 
 const template = document.createElement("template");
-template.innerHTML = `
+template.innerHTML = /* html */ `
   <style>
   :host {
       display: block;
@@ -14,31 +15,38 @@ template.innerHTML = `
   </style> 
   <x-container>
     <footer>
-        <a
-        part="anchor" target="_blank" rel="noopener" href="https://twitter.com/metju90"
-            >Twitter</a
+        <x-anchor
+          target="_blank"
+          rel="noopener"
+          href="https://twitter.com/metju90"
         >
+          Twitter
+        </x-anchor>
         -
-        <a 
-        part="anchor" target="_blank" rel="noopener" href="https://github.com/metju90"
-            >Github</a
+        <x-anchor
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/metju90"
         >
+          Github
+        </x-anchor>
         -
-        <a
-        part="anchor"
+        <x-anchor
             target="_blank"
             rel="noopener"
             href="https://stackoverflow.com/users/3861691/matthew-barbara"
-            >Stackoverflow</a
-        >
+          >
+          Stackoverflow
+        </x-anchor>
         -
-        <a
+        <x-anchor
             part="anchor"
             target="_blank"
             rel="noopener"
             href="mailto:barbaramatthew90@gmail.com"
-            >email</a
-        >
+          >
+            email
+        </x-anchor>
      </footer>
     </x-container>
 `;

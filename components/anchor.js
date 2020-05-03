@@ -3,20 +3,21 @@
 const template = document.createElement("template");
 template.innerHTML = `
     <style>
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      padding-bottom: 3px;
-      border-bottom: 1px solid transparent;
-    }
-    
-    a:hover {
-      border-bottom: 1px solid var(--primary-color);
-    }
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+      }
+      
+      a:hover {
+        border-bottom: 1px solid var(--primary-color);
+      }
     </style>
+
     <a>
       <slot></slot>
-     </a>
+    </a>
   `;
 
 class Anchor extends HTMLElement {
@@ -28,7 +29,7 @@ class Anchor extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["href", "target"];
+    return ["href", "target", "rel"];
   }
 
   attributeChangedCallback(name, oldVal, newVal) {
@@ -39,6 +40,10 @@ class Anchor extends HTMLElement {
       }
       case "target": {
         this.$a.setAttribute("target", newVal);
+        break;
+      }
+      case "rel": {
+        this.$a.setAttribute("rel", newVal);
         break;
       }
     }

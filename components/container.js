@@ -7,7 +7,7 @@ template.innerHTML = `
             max-width: 790px;
             margin-left: auto;
             margin-right: auto;
-            display: flex;
+            display: block;
         }
     </style>
     <slot></slot>
