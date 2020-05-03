@@ -1,6 +1,6 @@
 /** @format */
 
-import Container from "./container.js";
+import "/components/container.js";
 
 const template = document.createElement("template");
 template.innerHTML = `
@@ -15,6 +15,7 @@ template.innerHTML = `
         height: 100%;
         width: 100%;
         align-items: center;
+        display: flex;
       }
        
       a {
@@ -24,21 +25,10 @@ template.innerHTML = `
         text-decoration: none;
       }
 
-      a#myName {
-        flex: 6;
-      }
-      
-      a#about,
-      a#blog {
-        flex: 1;
-      }
+
   </style>
   <x-container>
-    <a href="/" id="myName">Matthew Barbara</a>
-    <a href="/about" id="about">about</a>
-    <a href="/blog/anxious-about-my-first-blog-post" id="blog"
-      >blog</a
-    >
+    <a href="/">Matthew Barbara</a>
   </x-container>
 `;
 
