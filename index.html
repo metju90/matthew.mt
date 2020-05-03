@@ -2,29 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>xxxMatthew Barbara</title>
-    <link rel="stylesheet" type="text/css" href="./styles/variables.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <title>Matthew Barbara</title>
+    <link rel="stylesheet" type="text/css" href="/styles/variables.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
 
-    <script src="./components/navigation.js" type="module"></script>
-    <script src="./components/footer.js" type="module"></script>
-
+    <script src="/components/navigation.js" type="module"></script>
+    <script src="/components/footer.js" type="module"></script>
     <base href="/" />
-
     <script type="module">
-      import "https://unpkg.com/router-slot";
+      import "https://unpkg.com/router-slot@1.5.4/router-slot.js";
       customElements.whenDefined("router-slot").then(async () => {
         const routerSlot = document.querySelector("router-slot");
-        console.log("uejjjaA??");
         routerSlot.add([
           {
             path: "about",
-            component: () => import("./pages/about.js")
+            component: () => import("/pages/about.js")
+          },
+          {
+            path: "not-found",
+            component: () => import("/pages/notFound.js")
+          },
+          {
+            path: "error",
+            component: () => import("/pages/error.js")
           },
           {
             path: "/",
-            component: () => import("./pages/home.js")
+            component: () => import("/pages/home.js"),
+            pathMatch: "full"
+          },
+          {
+            path: "/",
+            component: () => import("/pages/article.js"),
+            pathMatch: "fuzzy"
           }
         ]);
         document.getElementById("loader").remove();
@@ -54,7 +65,6 @@
       </x-container>
     </div>
     <router-slot></router-slot>
-    <!-- <router-slot></router-slot> -->
     <x-footer></x-footer>
   </body>
 </html>
