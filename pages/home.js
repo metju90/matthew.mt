@@ -1,6 +1,6 @@
 /** @format */
 import "/components/introAboutMe.js";
-import "/components/postSummary.js";
+import "/components/articleSummary.js";
 import "/components/container.js";
 
 const template = document.createElement("template");
@@ -12,12 +12,12 @@ template.innerHTML = `
     </style>
     <intro-about-me></intro-about-me>
     <x-container>
-      <post-summary
+      <article-summary
       title="Anxious about my first blog post"
       date="April 17th, 2020"
       summary="In 2018 I wanted to write my first blog post but I was afraid to do it..."
       link="/anxious-about-my-first-blog-post"
-      ></post-summary>
+      ></article-summary>
     </x-container>
 `;
 

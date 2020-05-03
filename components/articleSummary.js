@@ -28,7 +28,7 @@ template.innerHTML = `
         <p></p>
     </x-container>
 `;
-class PostSummary extends HTMLElement {
+class articleSummary extends HTMLElement {
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
@@ -65,5 +65,5 @@ class PostSummary extends HTMLElement {
   }
 }
 
-window.customElements.define("post-summary", PostSummary);
-export default PostSummary;
+window.customElements.define("article-summary", articleSummary);
+export default articleSummary;

@@ -18,5 +18,5 @@ class Error extends HTMLElement {
   }
 }
 
-window.customElements.define("x-error", Error);
+window.customElements.define("error-page", Error);
 export default Error;
