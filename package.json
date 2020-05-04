@@ -1,0 +1,31 @@
+{
+  "name": "matthew.mt",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^25.5.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "jest": "^25.5.4"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metju90/matthew.mt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metju90/matthew.mt/issues"
+  },
+  "homepage": "https://github.com/metju90/matthew.mt#readme"
+}
