@@ -16,6 +16,12 @@ describe(getIsPathNameValidArticle, () => {
     );
     expect(getIsPathNameValidArticle("1", mockedArticles)).toEqual(false);
     expect(getIsPathNameValidArticle("", mockedArticles)).toEqual(false);
+    expect(getIsPathNameValidArticle("xarticle-one", mockedArticles)).toEqual(
+      false
+    );
+    expect(getIsPathNameValidArticle("article-onex", mockedArticles)).toEqual(
+      false
+    );
     expect(getIsPathNameValidArticle("article-xone", mockedArticles)).toEqual(
       false
     );
@@ -27,11 +33,12 @@ describe(getIsPathNameValidArticle, () => {
       articleTwo: ""
     };
 
-    expect(getIsPathNameValidArticle("articleOne", mockedArticles)).toEqual(
+    expect(getIsPathNameValidArticle("article-one", mockedArticles)).toEqual(
       true
     );
-    expect(getIsPathNameValidArticle("articleTwo", mockedArticles)).toEqual(
+    expect(getIsPathNameValidArticle("article-two", mockedArticles)).toEqual(
       true
+    );e
     );
   });
 });
