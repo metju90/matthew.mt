@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "My personal website.",
   "main": "index.html",
-  "dependencies": {
-    "http-server": "^0.12.1"
-  },
   "devDependencies": {
+    "http-server": "^0.12.1",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-jest": "^25.5.1",

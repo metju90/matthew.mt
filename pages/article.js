@@ -30,7 +30,6 @@ class Article extends HTMLElement {
     this._shadowRoot = this.attachShadow({ mode: "open" });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
     this.$article = getRequestedArticle(requestedArticle, articles);
-    console.log(">>>!>!>!", this.$article);
   }
   connectedCallback() {
     this._shadowRoot
@@ -45,17 +44,13 @@ class Article extends HTMLElement {
     //the event occurred
   }
 
-  disconnectedCallback() {
-    console.log("disconnected!");
-  }
+  disconnectedCallback() {}
 
   attributeChangedCallback(name, oldVal, newVal) {
     console.log(`Attribute: ${name} changed!`);
   }
 
-  adoptedCallback() {
-    console.log("adopted!");
-  }
+  adoptedCallback() {}
 }
 
 window.customElements.define("article-page", Article);

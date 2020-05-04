@@ -55,8 +55,6 @@ class Article extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(">>>> ", this.attributes);
-
     //the event occurred
   }
 
