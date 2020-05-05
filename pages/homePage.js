@@ -2,6 +2,7 @@
 import "/components/introAboutMe.js";
 import "/components/articleSummary.js";
 import "/components/container.js";
+import * as articles from "/articles/index.js";
 
 const template = document.createElement("template");
 template.innerHTML = `
@@ -12,12 +13,6 @@ template.innerHTML = `
     </style>
     <intro-about-me></intro-about-me>
     <x-container>
-      <article-summary
-      title="Anxious about my first blog post"
-      date="April 17th, 2020"
-      summary="In 2018 I wanted to write my first blog post but I was afraid to do it..."
-      link="/anxious-about-my-first-blog-post"
-      ></article-summary>
     </x-container>
 `;
 
@@ -29,9 +24,21 @@ class Home extends HTMLElement {
   }
 
   connectedCallback() {
-    // const baseElement = document.createElement("base");
-    // baseElement.href = "/";
-    // document.head.appendChild(baseElement);
+    this.$xContainer = this._shadowRoot.querySelector("x-container");
+    Object.keys(articles).map(key => {
+      const { title, date, summary, link } = articles[key];
+      // "About me" article is treated different. Its summary its included in <intro-about-me>
+      // component and therefore there is no need to make another summary of it.
+      if (title === "About me") {
+        return null;
+      }
+      const articleSummary = document.createElement("article-summary");
+      articleSummary.setAttribute("title", title);
+      articleSummary.setAttribute("date", date);
+      articleSummary.setAttribute("summary", summary);
+      articleSummary.setAttribute("link", link);
+      this.$xContainer.appendChild(articleSummary);
+    });
   }
 }
 

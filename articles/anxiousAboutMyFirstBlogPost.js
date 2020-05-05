@@ -1,8 +1,10 @@
 /** @format */
 
 const title = "Anxious about my first blog post";
-
 const date = "April 17th, 2020";
+const summary =
+  "In 2018 I wanted to write my first blog post but I was afraid to do it...";
+const link = "/anxious-about-my-first-blog-post";
 
 const content = /* html */ `
     <p>
@@ -64,4 +66,4 @@ const content = /* html */ `
     </p>
 `;
 
-export { title, date, content };
+export { title, date, content, summary, link };
