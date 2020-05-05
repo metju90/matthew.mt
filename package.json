@@ -12,7 +12,7 @@
     "jest": "^25.5.4"
   },
   "scripts": {
-    "start": "http-server -p 8080 -P http://localhost:8080?",
+    "start": "http-server -p 8080 -P http://localhost:8080? -c-1",
     "test": "jest",
     "test-watch": "jest --watch"
   },
