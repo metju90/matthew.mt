@@ -19,24 +19,24 @@
         routerSlot.add([
           {
             path: "about",
-            component: () => import("/pages/about.js")
+            component: () => import("/pages/aboutPage.js")
           },
           {
             path: "not-found",
-            component: () => import("/pages/notFound.js")
+            component: () => import("/pages/notFoundPage.js")
           },
           {
             path: "error",
-            component: () => import("/pages/error.js")
+            component: () => import("/pages/errorPage.js")
           },
           {
             path: "/",
-            component: () => import("/pages/home.js"),
+            component: () => import("/pages/homePage.js"),
             pathMatch: "full"
           },
           {
             path: "/",
-            component: () => import("/pages/article.js"),
+            component: () => import("/pages/articlePage.js"),
             pathMatch: "fuzzy"
           }
         ]);
