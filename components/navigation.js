@@ -14,17 +14,28 @@ template.innerHTML = `
       x-container {
         height: 100%;
         width: 100%;
-        align-items: center;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
       }
        
       a {
         color: #fff;
         font-family: MontserratBold;
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         text-decoration: none;
       }
 
+      @media only screen and (min-width: 992px) {
+        x-container {
+          justify-content: inherit;
+        } 
+
+        a {
+          font-size: 1.7rem;
+        }
+      }
 
   </style>
   <x-container>

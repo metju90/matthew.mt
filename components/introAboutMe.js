@@ -14,6 +14,7 @@ template.innerHTML = `
       x-container {
         display: flex;
         align-items: center;
+        flex-direction: column;
       }
 
       img {
@@ -26,12 +27,23 @@ template.innerHTML = `
       }
 
       span {
-        width: 80%;
-        margin-left: 50px;
+        width: 100%;
+        margin-left: 0px;
       }
 
       p {
         margin-bottom: 10px;
+      }
+
+      @media only screen and (min-width: 992px) {
+        x-container {
+          flex-direction: inherit;
+        }
+
+        span {
+          width: 80%;
+          margin-left: 50px;
+        }
       }
   </style>
   <x-container>

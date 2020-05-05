@@ -20,13 +20,11 @@ template.innerHTML = `
             margin-bottom: 0;
         }
     </style>
-    <x-container>
-        <x-anchor>
-            <h2></h2>
-        </x-anchor>
-        <small></small>
-        <p></p>
-    </x-container>
+    <x-anchor>
+        <h2></h2>
+    </x-anchor>
+    <small></small>
+    <p></p>
 `;
 class articleSummary extends HTMLElement {
   constructor() {

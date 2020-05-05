@@ -8,6 +8,8 @@ template.innerHTML = `
             margin-left: auto;
             margin-right: auto;
             display: block;
+            padding: 0 25px;
+            
         }
     </style>
     <slot></slot>
