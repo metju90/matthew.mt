@@ -1,4 +1,3 @@
-/** @format */
 import "/components/introAboutMe.js";
 import "/components/articleSummary.js";
 import "/components/container.js";

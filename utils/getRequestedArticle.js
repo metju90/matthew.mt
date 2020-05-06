@@ -1,5 +1,3 @@
-/** @format */
-
 import dashToCamelCase from "/utils/dashToCamelCase.js";
 
 const getRequestedArticle = (requestedArticle, articles) => {

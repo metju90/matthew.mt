@@ -1,5 +1,3 @@
-/** @format */
-
 const title = "About me";
 const content = /* html */ `
   <p>

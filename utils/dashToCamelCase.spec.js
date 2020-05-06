@@ -1,5 +1,3 @@
-/** @format */
-
 import dashToCamelCase from "/utils/dashToCamelCase.js";
 
 describe(dashToCamelCase, () => {

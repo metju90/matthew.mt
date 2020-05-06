@@ -1,5 +1,3 @@
-/** @format */
-
 import getIsPathNameValidArticle from "/utils/getIsPathNameValidArticle.js";
 
 describe(getIsPathNameValidArticle, () => {

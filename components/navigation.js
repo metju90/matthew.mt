@@ -1,5 +1,3 @@
-/** @format */
-
 import "/components/container.js";
 
 const template = document.createElement("template");

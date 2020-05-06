@@ -1,4 +1,3 @@
-/** @format */
 import "/components/container.js";
 import "/components/anchor.js";
 
