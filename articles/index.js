@@ -1,2 +1,4 @@
-export * as aboutMe from "/articles/aboutMe.js";
-export * as anxiousAboutMyFirstBlogPost from "/articles/anxiousAboutMyFirstBlogPost.js";
+import * as aboutMe from "/articles/aboutMe.js";
+import * as anxiousAboutMyFirstBlogPost from "/articles/anxiousAboutMyFirstBlogPost.js";
+
+export { aboutMe, anxiousAboutMyFirstBlogPost };
