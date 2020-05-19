@@ -36,7 +36,6 @@ describe(getIsPathNameValidArticle, () => {
     );
     expect(getIsPathNameValidArticle("article-two", mockedArticles)).toEqual(
       true
-    );e
     );
   });
 });
