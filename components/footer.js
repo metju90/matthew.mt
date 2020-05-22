@@ -4,13 +4,12 @@ import "/components/anchor.js";
 const template = document.createElement("template");
 template.innerHTML = /* html */ `
   <style>
-  :host {
-      display: block;
-  }
-  footer {
-      height: 60px;
+    :host {
+        display: block;
     }
-    
+    footer {
+        height: 60px;
+      }
   </style> 
   <x-container>
     <footer>

@@ -11,8 +11,7 @@ template.innerHTML = `
       }
     </style>
     <intro-about-me></intro-about-me>
-    <x-container>
-    </x-container>
+    <x-container></x-container>
 `;
 
 class Home extends HTMLElement {

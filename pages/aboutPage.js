@@ -5,13 +5,13 @@ import { title, content } from "/articles/aboutMe.js";
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
-  :host {
-    display: block;
-  }
+      :host {
+        display: block;
+      }
 
   </style>
  <x-container>
-  <x-article></x-article>
+    <x-article></x-article>
  </x-container>
 `;
 
@@ -26,7 +26,6 @@ class About extends HTMLElement {
     this._shadowRoot
       .querySelector("x-article")
       .setAttribute("content", content);
-    //the event occurred
   }
 }
 

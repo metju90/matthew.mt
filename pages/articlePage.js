@@ -8,13 +8,12 @@ import getRequestedArticle from "/utils/getRequestedArticle.js";
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
-  :host {
-    display: block;
-  }
-
+    :host {
+      display: block;
+    }
   </style>
  <x-container>
-  <x-article></x-article>
+    <x-article></x-article>
  </x-container>
 `;
 
@@ -40,16 +39,11 @@ class Article extends HTMLElement {
     this._shadowRoot
       .querySelector("x-article")
       .setAttribute("content", this.$article.content);
-    //the event occurred
   }
-
-  disconnectedCallback() {}
 
   attributeChangedCallback(name, oldVal, newVal) {
     console.log(`Attribute: ${name} changed!`);
   }
-
-  adoptedCallback() {}
 }
 
 window.customElements.define("article-page", Article);
