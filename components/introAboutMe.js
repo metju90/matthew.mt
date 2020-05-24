@@ -52,11 +52,10 @@ template.innerHTML = `
           Hey there! I am Matthew Barbara. For the last 6 years i've been
           working as a fullstack developer. My hobbies are skiing, hiking, gym,
           playing video and learning more about software development. I live in Switzerland
-          and I am coming from Malta. A tiny island in the middle of the
-          Mediterranean sea. On this site I plan to start blog posts and in
+          and I am coming from Malta. On this site I plan to start blog posts and in
           the future will also be sharing some of the projects I work on.
         </p>
-        <x-anchor href="/about">Read more</x-anchor>
+        <x-anchor href="/about">Read more about me</x-anchor>
       </span>
   </x-container>
 `;
