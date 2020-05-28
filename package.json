@@ -4,11 +4,11 @@
   "description": "My personal website.",
   "main": "index.html",
   "devDependencies": {
-    "http-server": "^0.12.1",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-jest": "^25.5.1",
     "babel-plugin-module-resolver": "^4.0.0",
+    "http-server": "^0.12.1",
     "jest": "^25.5.4"
   },
   "scripts": {

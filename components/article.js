@@ -30,6 +30,22 @@ template.innerHTML = `
           margin-bottom: 20px;
           display: block;
         }
+        code {
+          background:  #eee;
+          border-radius: 3px;
+          padding: 2px 4px;
+          color: rgb(51, 51, 51);
+        }
+        a {
+          color: var(--primary-color);
+          text-decoration: none;
+          padding-bottom: 3px;
+          border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+          border-bottom: 1px solid var(--primary-color);
+        }
     </style>
     <article>
       <h1></h1>

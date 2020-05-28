@@ -7,11 +7,11 @@ const link = "/anxious-about-my-first-blog-post";
 const content = /* html */ `
     <p>
         At the end of October 2018 when React hooks were introduced by the
-    <a
-        href="https://www.youtube.com/watch?v=V-QO-KO90iQ&list=PLPxbbTqCLbGE5AihOSExAa4wUM-P42EIJ"
-        target="_blank"
-        >core team
-    </a>
+        <a
+            href="https://www.youtube.com/watch?v=V-QO-KO90iQ&list=PLPxbbTqCLbGE5AihOSExAa4wUM-P42EIJ"
+            target="_blank"
+            >core team
+        </a>
         I wasted no time to start experimenting with them. It was the newest and
         hottest topic for the months to come in the React community.
     </p>
