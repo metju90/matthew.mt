@@ -23,20 +23,22 @@ class Home extends HTMLElement {
 
   connectedCallback() {
     this.$xContainer = this._shadowRoot.querySelector("x-container");
-    Object.keys(articles).map(key => {
-      const { title, date, summary, link } = articles[key];
-      // "About me" article is treated different. Its summary its included in <intro-about-me>
-      // component and therefore there is no need to make another summary of it.
-      if (title === "About me") {
-        return null;
-      }
-      const articleSummary = document.createElement("article-summary");
-      articleSummary.setAttribute("title", title);
-      articleSummary.setAttribute("date", date);
-      articleSummary.setAttribute("summary", summary);
-      articleSummary.setAttribute("link", link);
-      this.$xContainer.appendChild(articleSummary);
-    });
+    Object.keys(articles)
+      .reverse()
+      .map(key => {
+        const { title, date, summary, link } = articles[key];
+        // "About me" article is treated different. Its summary its included in <intro-about-me>
+        // component and therefore there is no need to make another summary of it.
+        if (title === "About me") {
+          return null;
+        }
+        const articleSummary = document.createElement("article-summary");
+        articleSummary.setAttribute("title", title);
+        articleSummary.setAttribute("date", date);
+        articleSummary.setAttribute("summary", summary);
+        articleSummary.setAttribute("link", link);
+        this.$xContainer.appendChild(articleSummary);
+      });
   }
 }
 
