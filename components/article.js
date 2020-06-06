@@ -8,6 +8,9 @@ template.innerHTML = `
         p:first-child {
           margin-top: 0;
         }
+        p {
+          margin-bottom: 1.7rem
+        }
         figure {
           padding: var(--component-padding);
           text-align: center;
@@ -25,6 +28,11 @@ template.innerHTML = `
         h1 {
           margin: 0;
           line-height: 1;
+          font-size: 40px;
+        }
+
+        h3 {
+          font-size: 1.3rem
         }
         small {
           margin-bottom: 20px;
@@ -36,16 +44,7 @@ template.innerHTML = `
           padding: 2px 4px;
           color: rgb(51, 51, 51);
         }
-        a {
-          color: var(--primary-color);
-          text-decoration: none;
-          padding-bottom: 3px;
-          border-bottom: 1px solid transparent;
-        }
-        
-        a:hover {
-          border-bottom: 1px solid var(--primary-color);
-        }
+
     </style>
     <article>
       <h1></h1>

@@ -10,7 +10,7 @@ template.innerHTML = `
         }
 
         p {
-            margin-top: 15px;
+            margin-top: 5px;
             margin-bottom: 0;
         }
         h2  {
