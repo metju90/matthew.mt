@@ -4,13 +4,13 @@ import highlightedText from "/components/highlightedText.js";
 const title = "Frameworks, tools and SPAs";
 const date = "May 28th, 2020";
 const summary =
-  "I've built a modern SPA without any JS frameworks and tools...";
+  "I've developed a modern SPA without any JS frameworks and tools...";
 const link = "/frameworks-tools-spas";
 
 const content = /* html */ `
     <h2>TL;DR</h2>
     <p>I created a Single Page Application (SPA) without transpilers, bundlers or frameworks. I just used features of the modern browsers -- <code>Web Components</code>, <code>ES6 syntax</code>, and <code>history</code> API. <p>
-    <p>In this post I discussed  my personal experience in using the above APIs. I didn’t dive into implementation  details on how I built the SPA but rather explore a list of benefits and disadvantages of the outcome which is summarized here:</p>
+    <p>In this post I discussed  my personal experience in using the above APIs. I didn’t dive into implementation  details on how I developed the SPA but rather explore a list of benefits and disadvantages of the outcome which is summarized here:</p>
     <div>Pros:</div>
     <ul>
         <li>It’s lightweight. This SPA has 32KB of uncompressed JS code. In contrast, an equivalent page written in Create React App[link] comes with a production-optimized bundle weighing > 250kb</li>
@@ -21,7 +21,7 @@ const content = /* html */ `
         <li>Using no bundlers, the code is not optimized for production. No mangling, minification nor any optimizations </li>
         <li>Old browser support: Without the use of any polyfills for Web Components and ES6 syntax, this SPA is not functional on older browsers</li>
     </ul>
-    <div>Demo: This website is the SPA that I built.</div>
+    <div>Demo: currently you are using the SPA that I developed. It's this website. 😊 </div>
     <div>Source code: <x-anchor href="https://github.com/metju90/matthew.mt"  rel="noopener" target="_blank" />https://github.com/metju90/matthew.mt</x-anchor> </div>
     <h2>Longer version</h2>
     
@@ -101,7 +101,7 @@ const content = /* html */ `
     become easier to deal with, I believe it is a nightmare for someone who has little to no previous development experience.
     Just like it was to me during that time. </p>
 
-    <highlighted-text type="warning"><strong>Note:</strong> I do put emphasis on Developer Experience in this post
+    <highlighted-text type="warning">Note: I do put emphasis on Developer Experience in this post
     but this shouldn’t be given the highest priority when it comes to choosing a technology for production. There are
     many other things one should take into account.</highlighted-text>
 
@@ -121,7 +121,7 @@ const content = /* html */ `
     skimmed through some source code and found it interesting, but not interesting enough to invest more time in it. But now,
     with Web Components being fully supported across the board in modern browsers, I see potential in this technology.</p>
 
-    <p>This website itself is built in Web Components. If you are curious on how the markup looks you can inspect the element of
+    <p>This website itself is developed in Web Components. If you are curious on how the markup looks you can inspect the element of
     this page. You can see the source code of this blog here: <x-anchor href="https://github.com/metju90/matthew.mt" rel="noopener" target="_blank">https://github.com/metju90/matthew.mt</x-anchor> </p>
 `;
 
