@@ -27,7 +27,7 @@ class Home extends HTMLElement {
       .reverse()
       .map(key => {
         const { title, date, summary, link } = articles[key];
-        // "About me" article is treated different. Its summary its included in <intro-about-me>
+        // "About me" article is treated different. It's summary is included in  the <intro-about-me>
         // component and therefore there is no need to make another summary of it.
         if (title === "About me") {
           return null;

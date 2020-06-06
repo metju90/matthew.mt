@@ -51,9 +51,8 @@ template.innerHTML = `
         <p>
           Hey there! I am Matthew Barbara. For the last 6 years i've been
           working as a fullstack developer. My hobbies are skiing, hiking, gym,
-          playing video and learning more about software development. I live in Switzerland
-          and I am coming from Malta. On this site I plan to start blog posts and in
-          the future will also be sharing some of the projects I work on.
+          playing video games and learning more about software development. I was born and raised in
+          Malta and I've been living in Switzerland since 2018.
         </p>
         <x-anchor href="/about">Read more about me</x-anchor>
       </span>

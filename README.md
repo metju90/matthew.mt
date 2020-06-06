@@ -6,7 +6,7 @@ This is an experimental project which uses WebComponents to create a Single Page
 
 ## Transpiler, bundler, dependency and sophistication-free SPA
 
-This is a dependency-free\*\* SPA which works on modern browsers. Whilst I do acknowledge that web bundlers come with features which optimize performance, the objective of this mini project was to build a dependecy free SPA using the browser's API over anything else. I am planning to write an article on how I built this application in the coming days.
+This is a dependency-free\*\* SPA which works on modern browsers. Whilst I do acknowledge that web bundlers come with features which optimize performance, the objective of this mini project was to build a dependecy free SPA using just the browser's API.
 
 <sup>\*\* Except for one dependency which handles routing on the client. Good to know: the dependecy [(route-slot)](https://github.com/andreasbm/router-slot) itself does not have any dependencies and just uses the browser's API</sub>
 

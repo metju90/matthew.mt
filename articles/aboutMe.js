@@ -9,7 +9,7 @@ const content = /* html */ `
         alt="Matthew skiing"
       />
       <figcaption>
-        This is me. at Titlis Engelberg, Switzerland.
+        This is me. At Titlis Engelberg, Switzerland.
       </figcaption>
   </figure>
   <p>

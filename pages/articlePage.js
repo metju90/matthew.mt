@@ -40,10 +40,6 @@ class Article extends HTMLElement {
       .querySelector("x-article")
       .setAttribute("content", this.$article.content);
   }
-
-  attributeChangedCallback(name, oldVal, newVal) {
-    console.log(`Attribute: ${name} changed!`);
-  }
 }
 
 window.customElements.define("article-page", Article);
