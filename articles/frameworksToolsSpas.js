@@ -10,10 +10,10 @@ const link = "/frameworks-tools-spas";
 const content = /* html */ `
     <h2>TL;DR</h2>
     <p>I created a Single Page Application (SPA) without transpilers, bundlers or frameworks. I just used features of the modern browsers -- <code>Web Components</code>, <code>ES6 syntax</code>, and <code>history</code> API. <p>
-    <p>In this post I discussed  my personal experience in using the above APIs. I didn’t dive into implementation  details on how I developed the SPA but rather explore a list of benefits and disadvantages of the outcome which is summarized here:</p>
+    <p>In this post I discussed  my personal experience in using the above APIs. I didn’t dive into implementation  details on how I developed the SPA but I do mention a list of benefits and disadvantages of the outcome which is summarized here:</p>
     <div>Pros:</div>
     <ul>
-        <li>It’s lightweight. This SPA has 32KB of uncompressed JS code. In contrast, an equivalent page written in Create React App[link] comes with a production-optimized bundle weighing > 250kb</li>
+        <li>It’s lightweight. This SPA has 32KB of uncompressed JS code. In contrast, an equivalent page written in <x-anchor link="https://github.com/facebook/create-react-app" target="_blank">Create React App</x-anchor> comes with a production-optimized bundle weighing > 250kb</li>
         <li>Good Developer Experience. No time spent in configuring web bundlers and transpilers. I reused UI components which are supported natively in modern browsers</li>
     </ul>
     <div>Cons:</div>
