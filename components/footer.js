@@ -16,14 +16,6 @@ template.innerHTML = /* html */ `
         <x-anchor
           target="_blank"
           rel="noopener"
-          href="https://twitter.com/metju90"
-        >
-          Twitter
-        </x-anchor>
-        -
-        <x-anchor
-          target="_blank"
-          rel="noopener"
           href="https://github.com/metju90"
         >
           Github
