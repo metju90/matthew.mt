@@ -8,7 +8,7 @@ template.innerHTML = `
     Sorry, something went wrong.
 `;
 
-class Error extends HTMLElement {
+class ErrorPage extends HTMLElement {
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
@@ -16,5 +16,4 @@ class Error extends HTMLElement {
   }
 }
 
-window.customElements.define("error-page", Error);
-export default Error;
+window.customElements.define("error-page", ErrorPage);
