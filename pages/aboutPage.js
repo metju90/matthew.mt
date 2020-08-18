@@ -30,4 +30,3 @@ class About extends HTMLElement {
 }
 
 window.customElements.define("about-page", About);
-export default About;

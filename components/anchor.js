@@ -49,4 +49,3 @@ class Anchor extends HTMLElement {
 }
 
 window.customElements.define("x-anchor", Anchor);
-export default Anchor;

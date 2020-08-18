@@ -43,4 +43,3 @@ class Home extends HTMLElement {
 }
 
 window.customElements.define("home-page", Home);
-export default Home;

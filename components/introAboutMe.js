@@ -20,7 +20,7 @@ template.innerHTML = `
         border-radius: 50%;
         width: auto;
         float: left;
-        height: 130px;
+        height: 150px;
         margin: auto;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       }
@@ -68,4 +68,3 @@ class IntroAboutMe extends HTMLElement {
 }
 
 window.customElements.define("intro-about-me", IntroAboutMe);
-export default IntroAboutMe;
