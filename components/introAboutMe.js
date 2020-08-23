@@ -18,9 +18,7 @@ template.innerHTML = `
 
       img {
         border-radius: 50%;
-        width: auto;
         float: left;
-        height: 130px;
         margin: auto;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       }
@@ -46,7 +44,7 @@ template.innerHTML = `
       }
   </style>
   <x-container>
-      <img src="/images/matthew.jpg" />
+      <img src="/images/matthew.jpg" height="130" width="130" />
       <span>
         <p>
           Hey there! I am Matthew Barbara. For the last 6 years i've been

@@ -39,6 +39,7 @@ class Home extends HTMLElement {
         articleSummary.setAttribute("link", link);
         this.$xContainer.appendChild(articleSummary);
       });
+    document.querySelector("home-placeholder").remove();
   }
 }
 
