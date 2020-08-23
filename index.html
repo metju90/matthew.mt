@@ -26,28 +26,28 @@
       customElements.whenDefined("router-slot").then(async () => {
         const routerSlot = document.querySelector("router-slot");
         routerSlot.add([
-          // {
-          //   path: "about",
-          //   component: () => import("/pages/aboutPage.js")
-          // }
-          // {
-          //   path: "not-found",
-          //   component: () => import("/pages/notFoundPage.js")
-          // },
-          // {
-          //   path: "error",
-          //   component: () => import("/pages/errorPage.js")
-          // },
+          {
+            path: "about",
+            component: () => import("/pages/aboutPage.js")
+          },
+          {
+            path: "not-found",
+            component: () => import("/pages/notFoundPage.js")
+          },
+          {
+            path: "error",
+            component: () => import("/pages/errorPage.js")
+          },
           {
             path: "/",
             component: () => import("/pages/homePage.js"),
             pathMatch: "full"
+          },
+          {
+            path: "/",
+            component: () => import("/pages/articlePage.js"),
+            pathMatch: "fuzzy"
           }
-          // {
-          //   path: "/",
-          //   component: () => import("/pages/articlePage.js"),
-          //   pathMatch: "fuzzy"
-          // }
         ]);
         document.getElementById("loader").remove();
       });
