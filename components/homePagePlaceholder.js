@@ -19,7 +19,6 @@ template.innerHTML = `
         #intro {
             padding: var(--component-padding);
             background: var(--grey-color);
-            height: 294px;
             width: 100%;
         }
               
@@ -27,34 +26,128 @@ template.innerHTML = `
             display: flex;
             align-items: center;
             flex-direction: column;
+            height: 214px;
         }
 
-        img {
+        img {}
+        #image {
             border-radius: 50%;
-            width: auto;
             float: left;
-            height: 150px;
-            margin: auto;
+            width: 130px;
+            height: 130px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
+
+        .intro-text-wrapper {
+          margin-left: 50px;
+          width: 300px;
+        }
+
+        .text-row {
+          height: 10px;
+          margin-bottom: 15px;
+        }
+
+        .article-summary {
+          padding: var(--component-padding);
+        }
+
+        .article-summary > .text-row:nth-of-type(1) {
+           width: 280px;
+        }
+
+        .article-summary > .text-row:nth-of-type(2) {
+          width: 90px;
+          margin-top: -8px;
+        }
+
+        .article-summary > .text-row:nth-of-type(3) {
+          max-width: 500px;
+          width: 100%;
+        }
+
+        @keyframes placeHolderShimmer{
+          0%{
+              background-position: -468px 0
+          }
+          100%{
+              background-position: 468px 0
+          }
+        }
+      
+      .animated-background {
+          animation-duration: 1.25s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+          animation-name: placeHolderShimmer;
+          animation-timing-function: linear;
+          background: darkgray;
+          background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+          background-size: 800px 104px;
+          height: 100%;
+          position: relative;
+          border-radius: inherit;
+      }
 
         @media only screen and (min-width: 992px) {
             #intro x-container {
               flex-direction: inherit;
             }
     
-            span {
-              width: 80%;
+            .intro-text {
+              width: 450px;
               margin-left: 50px;
             }
           }
     </style>
     <div id="intro">
         <x-container> 
-            <div>placer holder one</div>
-            <div>placer holder two</div>
+            <div id="image">
+              <div class="animated-background"></div>
+            </div>
+            <div class="intro-text">
+              <div class="text-row">
+                <div class="animated-background"></div>
+              </div>
+              <div class="text-row">
+                <div class="animated-background"></div>
+              </div>
+              <div class="text-row">
+                <div class="animated-background"></div>
+              </div>
+              <div class="text-row">
+                <div class="animated-background"></div>
+              </div>
+              <div class="text-row">
+                <div class="animated-background"></div>
+              </div>
+            </div>
          </x-container>
     </div>
+    <x-container> 
+      <div class="article-summary">
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+      </div>
+      <div class="article-summary">
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+        <div class="text-row">
+          <div class="animated-background"></div>
+        </div>
+      </div>
+    </x-container>
     
 `;
 class HomePagePlacerholder extends HTMLElement {

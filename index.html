@@ -20,33 +20,34 @@
 
     <script src="/components/navigation.js" type="module"></script>
     <script src="/components/footer.js" type="module"></script>
+    <script src="/components/homePagePlaceholder.js" type="module"></script>
     <script type="module">
       import "https://unpkg.com/router-slot@1.5.4/router-slot.js";
       customElements.whenDefined("router-slot").then(async () => {
         const routerSlot = document.querySelector("router-slot");
         routerSlot.add([
-          {
-            path: "about",
-            component: () => import("/pages/aboutPage.js")
-          },
-          {
-            path: "not-found",
-            component: () => import("/pages/notFoundPage.js")
-          },
-          {
-            path: "error",
-            component: () => import("/pages/errorPage.js")
-          },
+          // {
+          //   path: "about",
+          //   component: () => import("/pages/aboutPage.js")
+          // }
+          // {
+          //   path: "not-found",
+          //   component: () => import("/pages/notFoundPage.js")
+          // },
+          // {
+          //   path: "error",
+          //   component: () => import("/pages/errorPage.js")
+          // },
           {
             path: "/",
             component: () => import("/pages/homePage.js"),
             pathMatch: "full"
-          },
-          {
-            path: "/",
-            component: () => import("/pages/articlePage.js"),
-            pathMatch: "fuzzy"
           }
+          // {
+          //   path: "/",
+          //   component: () => import("/pages/articlePage.js"),
+          //   pathMatch: "fuzzy"
+          // }
         ]);
         document.getElementById("loader").remove();
       });
@@ -70,9 +71,7 @@
   <body>
     <x-navigation></x-navigation>
     <div id="loader">
-      <x-container>
-        Loading...
-      </x-container>
+      <home-placeholder></home-placeholder>
     </div>
     <router-slot></router-slot>
     <x-footer></x-footer>
