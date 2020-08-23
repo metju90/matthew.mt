@@ -22,3 +22,4 @@ class NotFound extends HTMLElement {
 }
 
 window.customElements.define("not-found-page", NotFound);
+export default NotFound;

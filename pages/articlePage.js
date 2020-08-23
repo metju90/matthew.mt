@@ -43,3 +43,4 @@ class Article extends HTMLElement {
 }
 
 window.customElements.define("article-page", Article);
+export default Article;

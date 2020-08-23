@@ -63,3 +63,4 @@ class articleSummary extends HTMLElement {
 }
 
 window.customElements.define("article-summary", articleSummary);
+export default articleSummary;

@@ -90,3 +90,4 @@ class Article extends HTMLElement {
 }
 
 window.customElements.define("x-article", Article);
+export default Article;

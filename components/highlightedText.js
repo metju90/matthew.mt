@@ -70,3 +70,4 @@ class HighlightedText extends HTMLElement {
 }
 
 window.customElements.define("highlighted-text", HighlightedText);
+export default HighlightedText;

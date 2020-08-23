@@ -22,3 +22,4 @@ class Container extends HTMLElement {
 }
 
 window.customElements.define("x-container", Container);
+export default Container;
