@@ -1,5 +1,5 @@
-import anchor from "/components/anchor.js";
-import highlightedText from "/components/highlightedText.js";
+import "/components/anchor.js";
+import "/components/highlightedText.js";
 
 const title = "Frameworks, tools and SPAs";
 const date = "May 28th, 2020";

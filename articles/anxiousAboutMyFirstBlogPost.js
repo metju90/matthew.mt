@@ -1,4 +1,5 @@
-import anchor from "/components/anchor.js";
+import "/components/anchor.js";
+
 const title = "Anxious about my first blog post";
 const date = "April 17th, 2020";
 const summary =
