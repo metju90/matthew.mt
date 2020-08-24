@@ -26,6 +26,7 @@ class About extends HTMLElement {
     this._shadowRoot
       .querySelector("x-article")
       .setAttribute("content", content);
+    document.querySelector("home-placeholder").remove();
   }
 }
 
