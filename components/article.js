@@ -31,6 +31,10 @@ template.innerHTML = `
           font-size: 40px;
         }
 
+        h2: {
+          font-size: 1.5rem
+        }
+
         h3 {
           font-size: 1.3rem
         }
@@ -38,7 +42,7 @@ template.innerHTML = `
           margin-bottom: 20px;
           display: block;
         }
-        code {
+        code, code-block {
           background:  #eee;
           border-radius: 3px;
           padding: 2px 4px;
