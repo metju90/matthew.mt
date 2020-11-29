@@ -17,17 +17,19 @@ const content = /* html */ `
 
     <div style="margin-bottom:3rem">
        <h2>#1 Switch back to your previous directory</h2>
+       <div>Useful when you are working in a monorepo and often needs to switch back and forth to several directories</div>
        <code-block>
            <div>$ cd -</div>
         </code-block>
-        or go back to your 4th to last directory from your history
-        <code-block>$ cd -4</code-block>
-        Note: the first command also works to checkout your previous Git branch
+        or go back to your <code>n</code> to last directory from your history
+        <code-block>$ cd -2</code-block>
+        Note: the first command also works to checkout to your previous Git branch
         <code-block>$ git checkout -</code-block>
     </div>
 
     <div style="margin-bottom:3rem">
         <h2>#2 Use the parameter of the last command</h2>
+       <div>Has an many use cases. One common practical example is to create a directory and to change to it</div>
         <code-block>
             $ mkdir /home && cd $_
         </code-block>
