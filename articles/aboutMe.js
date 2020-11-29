@@ -2,7 +2,7 @@ const title = "About me";
 const content = /* html */ `
   <p>My full name is Matthew Barbara. For the last 6 years i've been working as a fullstack developer. My hobbies are skiing, hiking, gym, playing video games and learning more about software development. I was born and raised in Malta and I've been living in Switzerland since 2018.</p>
   <p>
-      Prior to working as a software engineer I used to work as croupier in two casinos in Malta. Dealing games such as roulette, blackjack and at later stages Texas hold 'em poker too. After 4 years, at the age of 22, I realized that this isn’t what I want to do for the rest of my life. I found myself asking what new profession I could take on if I had to stop working as croupier.
+      Prior to working as a software engineer I used to work as croupier in two casinos in Malta. Dealing games such as roulette, blackjack and at later stages Texas hold 'em poker too. After 4 years working in casino, at the age of 22, I realized that this isn’t what I want to do for the rest of my life. I found myself asking what new profession I could take on if I had to stop working as a croupier.
   </p>
   <figure>
       <img
@@ -14,7 +14,7 @@ const content = /* html */ `
       </figcaption>
   </figure>
   <p>
-      Being my extended family's uncertified but effective PC technician, I did know the basics of computers by around the age of 12. I knew what RAM, CPU and hard disk were and why a computer may be performing slow. I also knew that if your Ethernet cable was unplugged that is very likely that the reason is that there is no internet connection. Ohh, and I certainly knew how to format hard disks! That was my solution to PCs with janky performance problems. It worked most of the time. When it didn't, I told my clients to go to a real technician.😁
+      Being my extended family's uncertified but effective PC technician, I did know the basics of computers by around the age of 12. I knew what RAM, CPU and hard disk were and why a computer may be performing slow. I also knew that if an Ethernet cable is unplugged it was very likely to be the reason for having no internet connection. Ohh, and I certainly knew how to format hard disks! That was my solution to PCs with janky performance problems. It worked most of the time. When it didn't, I told my clients to go to a real technician.😁
   </p>
   <p>
       Back to me being a croupier and wanting to change my profession - I always loved computers. I had fallen in love with computers when my family bought a home PC in 2002. My love for computers grew even stronger in my late teenage when I was assembling gaming computer hardware for myself and friends. The idea of me working as an IT professional was intriguing. I started to look in which field I could work as an IT professional. Do I become the certified PC technician that I never was? 🤔 Or perhaps should I look at other jobs in IT? What if I become a programmer? But how exactly? These were the questions that I was asking myself and that was the time when I started to become curious about software. 
