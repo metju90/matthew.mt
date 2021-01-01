@@ -45,9 +45,7 @@ template.innerHTML = `
           display: block;
           font-size: 0.8rem;
         }
-        small:last-of-type {
-          margin-bottom: 20px;
-        }
+
         code, code-block {
           background:  #eee;
           border-radius: 3px;
@@ -55,13 +53,17 @@ template.innerHTML = `
           color: rgb(51, 51, 51);
         }
         .hidden {
-          visibility: hidden;
+          display: none;
+        }
+
+        #content {
+          margin-top: 20px;
         }
 
     </style>
     <article>
       <h1></h1>
-      <small id="date">Published&nbsp;</small>
+      <small id="date" class="hidden">Published&nbsp;</small>
       <small id="lastUpdate" class="hidden">Updated&nbsp;</small>
       <div id="content"></div>
     </article>
@@ -93,6 +95,7 @@ class Article extends HTMLElement {
         break;
       }
       case "date": {
+        this.$date.classList.remove("hidden");
         this.$date.innerText += newVal;
         break;
       }

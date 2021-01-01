@@ -32,7 +32,9 @@ class Article extends HTMLElement {
   connectedCallback() {
     const article = this._shadowRoot.querySelector("x-article");
     article.setAttribute("title", this.$article.title);
-    article.setAttribute("date", this.$article.date);
+    if (this.$article.date) {
+      article.setAttribute("date", this.$article.date);
+    }
     if (this.$article.lastUpdate) {
       article.setAttribute("last-update", this.$article.lastUpdate);
     }
