@@ -2,7 +2,7 @@ import "/components/article.js";
 import "/components/container.js";
 
 import * as articles from "/articles/index.js";
-import getIsPathNameValidArticle from "/utils/getIsPathNameValidArticle.js";
+import getDoesRequestedArticleExist from "/utils/getDoesRequestedArticleExist.js";
 import getRequestedArticle from "/utils/getRequestedArticle.js";
 
 const template = document.createElement("template");
@@ -22,7 +22,7 @@ class Article extends HTMLElement {
     super();
     const requestedArticle = window.location.pathname.substr(1);
 
-    if (!getIsPathNameValidArticle(requestedArticle, articles)) {
+    if (!getDoesRequestedArticleExist(requestedArticle, articles)) {
       history.pushState({}, "", "/not-found");
     }
     this._shadowRoot = this.attachShadow({ mode: "open" });

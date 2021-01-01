@@ -1,6 +1,6 @@
 import dashToCamelCase from "/utils/dashToCamelCase.js";
 
-const getIsPathNameValidArticle = (requestedArticle, articles) => {
+const getDoesRequestedArticleExist = (requestedArticle, articles) => {
   const camelCasedRequestedArticle = dashToCamelCase(requestedArticle);
   if (!(camelCasedRequestedArticle in articles)) {
     history.pushState({}, "", "/not-found");
@@ -9,4 +9,4 @@ const getIsPathNameValidArticle = (requestedArticle, articles) => {
   return true;
 };
 
-export default getIsPathNameValidArticle;
+export default getDoesRequestedArticleExist;
