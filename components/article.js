@@ -38,9 +38,15 @@ template.innerHTML = `
         h3 {
           font-size: 1.3rem
         }
+        small:first-of-type {
+          margin-top: 5px;
+        }
         small {
-          margin-bottom: 20px;
           display: block;
+          font-size: 0.8rem;
+        }
+        small:last-of-type {
+          margin-bottom: 20px;
         }
         code, code-block {
           background:  #eee;
@@ -52,7 +58,8 @@ template.innerHTML = `
     </style>
     <article>
       <h1></h1>
-      <small></small>
+      <small id="date">Published&nbsp;</small>
+      <small id="lastUpdate">Updated&nbsp;</small>
       <div id="content"></div>
     </article>
 `;
@@ -63,12 +70,13 @@ class Article extends HTMLElement {
     this._shadowRoot = this.attachShadow({ mode: "open" });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
     this.$title = this._shadowRoot.querySelector("h1");
-    this.$date = this._shadowRoot.querySelector("small");
+    this.$date = this._shadowRoot.querySelector("#date");
+    this.$lastUpdate = this._shadowRoot.querySelector("#lastUpdate");
     this.$content = this._shadowRoot.querySelector("#content");
   }
 
   static get observedAttributes() {
-    return ["title", "date", "content"];
+    return ["title", "date", "last-update", "content"];
   }
 
   connectedCallback() {
@@ -82,11 +90,15 @@ class Article extends HTMLElement {
         break;
       }
       case "date": {
-        this.$date.innerText = newVal;
+        this.$date.innerText += newVal;
         break;
       }
       case "content": {
         this.$content.innerHTML = newVal;
+        break;
+      }
+      case "last-update": {
+        this.$lastUpdate.innerText += newVal;
         break;
       }
     }

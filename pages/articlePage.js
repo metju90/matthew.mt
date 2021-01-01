@@ -30,15 +30,11 @@ class Article extends HTMLElement {
     this.$article = getRequestedArticle(requestedArticle, articles);
   }
   connectedCallback() {
-    this._shadowRoot
-      .querySelector("x-article")
-      .setAttribute("title", this.$article.title);
-    this._shadowRoot
-      .querySelector("x-article")
-      .setAttribute("date", this.$article.date);
-    this._shadowRoot
-      .querySelector("x-article")
-      .setAttribute("content", this.$article.content);
+    const article = this._shadowRoot.querySelector("x-article");
+    article.setAttribute("title", this.$article.title);
+    article.setAttribute("date", this.$article.date);
+    article.setAttribute("last-update", this.$article.lastUpdate);
+    article.setAttribute("content", this.$article.content);
 
     const mainPlaceholder = document.querySelector("main-placeholder");
     if (mainPlaceholder) {
