@@ -27,7 +27,7 @@ class About extends HTMLElement {
       .querySelector("x-article")
       .setAttribute("content", content);
 
-    const mainPlaceholder = document.querySelector("home-placeholder");
+    const mainPlaceholder = document.querySelector("main-placeholder");
     if (mainPlaceholder) {
       mainPlaceholder.remove();
     }
