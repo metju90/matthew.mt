@@ -71,7 +71,6 @@ const content = /* html */ `
 
     <div style="margin-bottom:3rem">
         <h2>#7 Run two or more commands in parallel</h2>
-        <div>The running processes stdout will be printed</div>
         <code-block>
             <div>$ (cd /foo && npm start) <strong>&</strong> (cd /bar && npm start)</div>
         </code-block>

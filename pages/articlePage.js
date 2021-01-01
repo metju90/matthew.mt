@@ -33,7 +33,9 @@ class Article extends HTMLElement {
     const article = this._shadowRoot.querySelector("x-article");
     article.setAttribute("title", this.$article.title);
     article.setAttribute("date", this.$article.date);
-    article.setAttribute("last-update", this.$article.lastUpdate);
+    if (this.$article.lastUpdate) {
+      article.setAttribute("last-update", this.$article.lastUpdate);
+    }
     article.setAttribute("content", this.$article.content);
 
     const mainPlaceholder = document.querySelector("main-placeholder");

@@ -54,12 +54,15 @@ template.innerHTML = `
           padding: 2px 4px;
           color: rgb(51, 51, 51);
         }
+        .hidden {
+          visibility: hidden;
+        }
 
     </style>
     <article>
       <h1></h1>
       <small id="date">Published&nbsp;</small>
-      <small id="lastUpdate">Updated&nbsp;</small>
+      <small id="lastUpdate" class="hidden">Updated&nbsp;</small>
       <div id="content"></div>
     </article>
 `;
@@ -98,6 +101,7 @@ class Article extends HTMLElement {
         break;
       }
       case "last-update": {
+        this.$lastUpdate.classList.remove("hidden");
         this.$lastUpdate.innerText += newVal;
         break;
       }
