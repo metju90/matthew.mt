@@ -25,7 +25,7 @@ class Home extends HTMLElement {
     this.$xContainer = this._shadowRoot.querySelector("x-container");
     Object.keys(articles)
       .reverse()
-      .map(key => {
+      .map((key) => {
         const { title, date, summary, link } = articles[key];
         // "About me" article is treated different. It's summary is included in  the <intro-about-me>
         // component and therefore there is no need to make another summary of it.
@@ -39,7 +39,10 @@ class Home extends HTMLElement {
         articleSummary.setAttribute("link", link);
         this.$xContainer.appendChild(articleSummary);
       });
-    document.querySelector("home-placeholder").remove();
+    const mainPlaceholder = document.querySelector("main-placeholder");
+    if (mainPlaceholder) {
+      mainPlaceholder.remove();
+    }
   }
 }
 

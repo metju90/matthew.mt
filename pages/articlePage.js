@@ -39,7 +39,11 @@ class Article extends HTMLElement {
     this._shadowRoot
       .querySelector("x-article")
       .setAttribute("content", this.$article.content);
-    document.querySelector("home-placeholder").remove();
+
+    const mainPlaceholder = document.querySelector("main-placeholder");
+    if (mainPlaceholder) {
+      mainPlaceholder.remove();
+    }
   }
 }
 

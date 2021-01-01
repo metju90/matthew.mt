@@ -150,7 +150,7 @@ template.innerHTML = `
     </x-container>
     
 `;
-class HomePagePlacerholder extends HTMLElement {
+class MainPlacerholder extends HTMLElement {
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
@@ -158,4 +158,4 @@ class HomePagePlacerholder extends HTMLElement {
   }
 }
 
-window.customElements.define("home-placeholder", HomePagePlacerholder);
+window.customElements.define("main-placeholder", MainPlacerholder);
