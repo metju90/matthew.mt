@@ -2,7 +2,7 @@ import "/components/codeBlock.js";
 
 const title = "Useful unix commands";
 const date = "November 24th, 2020";
-const lastUpdate = "January 1st 2021";
+const lastUpdate = "March 17th 2021";
 const summary =
   "Useful unix commands which facilitates my work as full stack engineer";
 const link = "/useful-unix-commands";
@@ -74,6 +74,54 @@ const content = /* html */ `
         <code-block>
             <div>$ (cd /foo && npm start) <strong>&</strong> (cd /bar && npm start)</div>
         </code-block>
+    </div>
+
+    <div style="margin-bottom:3rem">
+        <h2>#8 Less</h2>
+        <h4>Options</h4>
+         <div>
+             <code>-N</code> to show line numbers.
+        </div>
+         <div>
+             <code>-F</code> to read for new changes.
+        </div>
+        <h4>Navigation</h4>
+        <div>
+             <code>G</code> end of file.
+        </div>
+        <div>
+             <code>g</code> beginning of file.
+        </div>
+        <div>
+             <code>SPACE</code> forward one window.
+        </div>
+        <div>
+             <code>b</code> back one window.
+        </div>
+        <h4>Search</h4>
+        <div>
+             <code>/</code> Search pattern in next occureance.
+        </div>
+        <div>
+             <code>?</code> Search pattern in previous occureance.
+        </div>
+        <div>
+             <code>n</code> search next match in forwrd.
+        </div>
+        <div>
+             <code>N</code> search next match in backwards.
+        </div>
+
+        <h4>Others</h4>
+        <div>
+             <code>ma</code> mark the current position with the letter 'a'.
+        </div>
+        <div>
+             <code>'a</code> go to the marked position 'a'.
+        </div>
+        <div>
+             <code>&</code> display only the matching lines, not all.
+        </div>
     </div>
 `;
 
