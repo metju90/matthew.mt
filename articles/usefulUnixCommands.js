@@ -2,7 +2,7 @@ import "/components/codeBlock.js";
 
 const title = "Useful unix commands";
 const date = "November 24th, 2020";
-const lastUpdate = "March 17th 2021";
+const lastUpdate = "June 1th 2021";
 const summary =
   "Useful unix commands which facilitates my work as full stack engineer";
 const link = "/useful-unix-commands";
@@ -122,6 +122,14 @@ const content = /* html */ `
         <div>
              <code>&</code> display only the matching lines, not all.
         </div>
+    </div>
+
+    <div style="margin-bottom:3rem">
+        <h2>#9 Remove from current and sub directories</h2>
+        <div>If you have several projects, recursively removing <code>node_modules</code> is one effecting way to free up disk space</div>
+        <code-block>
+            <div>$ find . -name "node_modules" -type d -prune -exec rm -rf '{}' +</div>
+        </code-block>
     </div>
 `;
 
