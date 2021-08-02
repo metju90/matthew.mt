@@ -9,10 +9,9 @@ const link = "/useful-unix-commands";
 
 const content = /* html */ `
     <div>
-        <p>As a full stack engineer I often need to execute certain Unix commands to complete a
-        particular task. Over the years I’ve come across a list of very handy commands
-        which facilitated my day-to-day work and I’ve decided to document and share these commands in my blog.
-        Now, without further ado, let's see what these commands are 😊 
+        <p>As a fullstack engineer I often need to execute certain Unix commands to complete a
+        particular task. Over the years, I’ve come across a list of handy commands that facilitated my day-to-day work, and I’ve decided to document and share these commands in my blog.
+        Now, without further ado, let's see what these commands are 😊  
         </p>
     </div>
 
