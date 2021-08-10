@@ -1,7 +1,7 @@
 const workingExperience = new Date().getFullYear() - 2014;
 const title = "About me";
 const content = /* html */ `
-  <p>My full name is Matthew Barbara. For the last ${workingExperience} i've been working as a fullstack developer. My hobbies are skiing, hiking, gym, playing video games and learning more about software development. I was born and raised in Malta and I've been living in Switzerland since 2018.</p>
+  <p>My full name is Matthew Barbara. For the last ${workingExperience} I've been working as a fullstack developer. My hobbies are skiing, hiking, gym, playing video games and learning more about software development. I was born and raised in Malta and I've been living in Switzerland since 2018.</p>
   <p>
     Prior to working as a software engineer, I used to work as a croupier in two casinos in Malta. Dealing games such as roulette, blackjack and at later stages, Texas hold 'em poker too. After four years, aged 22, I realised that this isn’t what I want to do for the rest of my life. I found myself asking what new profession I could take on if I had to stop working as a croupier.
   </p>

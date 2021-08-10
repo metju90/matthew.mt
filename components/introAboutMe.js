@@ -54,7 +54,7 @@ template.innerHTML = `
         <p>
           Hey there! I am Matthew Barbara. For the last ${
             new Date().getFullYear() - 2014
-          } years i've been
+          } years I've been
           working as a fullstack developer. My hobbies are skiing, hiking, gym,
           playing video games and learning more about software development. I was born and raised in
           Malta and I've been living in Switzerland since 2018.
