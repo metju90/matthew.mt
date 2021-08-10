@@ -16,12 +16,6 @@ template.innerHTML = `
         flex-direction: column;
       }
 
-      img {
-        border-radius: 50%;
-        float: left;
-        margin: auto;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      }
 
       span {
         width: 100%;
@@ -30,6 +24,17 @@ template.innerHTML = `
 
       p {
         margin-bottom: 10px;
+      }
+
+      #image {
+        width: 150px;
+        height: 150px;
+        background: url('/images/matthew-2021.jpg') no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        background-position: top;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
       }
 
       @media only screen and (min-width: 992px) {
@@ -44,7 +49,7 @@ template.innerHTML = `
       }
   </style>
   <x-container>
-      <img src="/images/matthew.jpg" height="130" width="130" />
+      <div id="image"></div>
       <span>
         <p>
           Hey there! I am Matthew Barbara. For the last ${
