@@ -20,14 +20,18 @@ template.innerHTML = `
 class Article extends HTMLElement {
   constructor() {
     super();
-    const requestedArticle = window.location.pathname.substr(1);
+    const requestedArticleName = window.location.pathname.substr(1);
 
-    if (!getDoesRequestedArticleExist(requestedArticle, articles)) {
+    if (!getDoesRequestedArticleExist(requestedArticleName, articles)) {
       history.pushState({}, "", "/not-found");
     }
+    const requestedArticle = getRequestedArticle(
+      requestedArticleName,
+      articles
+    );
     this._shadowRoot = this.attachShadow({ mode: "open" });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
-    this.$article = getRequestedArticle(requestedArticle, articles);
+    this.$article = requestedArticle;
   }
   connectedCallback() {
     const article = this._shadowRoot.querySelector("x-article");
