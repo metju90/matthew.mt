@@ -1,7 +1,7 @@
 import "/components/introAboutMe.js";
 import "/components/articleSummary.js";
 import "/components/container.js";
-import * as articles from "/articles/index.js";
+import articles from "/articles/index.js";
 
 const template = document.createElement("template");
 template.innerHTML = `
@@ -23,22 +23,20 @@ class Home extends HTMLElement {
 
   connectedCallback() {
     this.$xContainer = this._shadowRoot.querySelector("x-container");
-    Object.keys(articles)
-      .reverse()
-      .map((key) => {
-        const { title, date, summary, link } = articles[key];
-        // "About me" article is treated different. It's summary is included in  the <intro-about-me>
-        // component and therefore there is no need to make another summary of it.
-        if (title === "About me") {
-          return null;
-        }
-        const articleSummary = document.createElement("article-summary");
-        articleSummary.setAttribute("title", title);
-        articleSummary.setAttribute("date", date);
-        articleSummary.setAttribute("summary", summary);
-        articleSummary.setAttribute("link", link);
-        this.$xContainer.appendChild(articleSummary);
-      });
+    articles.reverse().map((article) => {
+      const { title, date, summary, link } = article;
+      // "About me" article is treated different. It's summary is included in  the <intro-about-me>
+      // component and therefore there is no need to make another summary of it.
+      if (title === "About me") {
+        return null;
+      }
+      const articleSummary = document.createElement("article-summary");
+      articleSummary.setAttribute("title", title);
+      articleSummary.setAttribute("date", date);
+      articleSummary.setAttribute("summary", summary);
+      articleSummary.setAttribute("link", link);
+      this.$xContainer.appendChild(articleSummary);
+    });
     const mainPlaceholder = document.querySelector("main-placeholder");
     if (mainPlaceholder) {
       mainPlaceholder.remove();
