@@ -22,6 +22,7 @@ class About extends HTMLElement {
     this._shadowRoot.appendChild(template.content.cloneNode(true));
   }
   connectedCallback() {
+    document.title += ` - ${title}`;
     this._shadowRoot.querySelector("x-article").setAttribute("title", title);
     this._shadowRoot
       .querySelector("x-article")

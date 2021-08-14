@@ -31,6 +31,7 @@ class Article extends HTMLElement {
   }
   connectedCallback() {
     const article = this._shadowRoot.querySelector("x-article");
+    window.document.title += ` - ${this.$article.title}`;
     article.setAttribute("title", this.$article.title);
     if (this.$article.date) {
       article.setAttribute("date", this.$article.date);
