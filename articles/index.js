@@ -6,7 +6,7 @@ import * as chromeDevtools from "/articles/chromeDevtools.js";
 
 export {
   aboutMe,
-  anxiousAboutMyFirstBlogPost,
+  // anxiousAboutMyFirstBlogPost,
   frameworksToolsSpas,
   usefulUnixCommands,
   chromeDevtools,

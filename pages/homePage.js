@@ -2,7 +2,7 @@ import "/components/introAboutMe.js";
 import "/components/articleSummary.js";
 import "/components/container.js";
 import {
-  anxiousAboutMyFirstBlogPost,
+  // anxiousAboutMyFirstBlogPost,
   frameworksToolsSpas,
   usefulUnixCommands,
   chromeDevtools,
@@ -32,7 +32,7 @@ class Home extends HTMLElement {
       chromeDevtools,
       usefulUnixCommands,
       frameworksToolsSpas,
-      anxiousAboutMyFirstBlogPost,
+      // anxiousAboutMyFirstBlogPost,
     ].map((article) => {
       const { title, date, summary, link } = article;
       const articleSummary = document.createElement("article-summary");
